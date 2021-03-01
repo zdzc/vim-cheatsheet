@@ -8,25 +8,32 @@
 - `:x` - equivalent to `:wq`
 
 ## Cursor Movement
+### Basic
 - `h` - left
 - `j` - down
 - `k` - up
 - `l` - right
 - `0` - the start of the line
 - `$` - the end of the line
+- `f<char>` - next occurence of `<char>` on current line
+- `F<char>` - previous occurence of `<char>` on current line
+- `t<char>` - left of `f<char>`
+- `T<char>` - left of `F<char>`
 - `G` - the last line
 - `_G` - nth-line
+- `^f` - move forward a page
+- `^b` - move backward a page
+### Word
 - `w` - move forwards to the start of a word
 - `W` - move forwards to the start of a WORD
 - `e` - move forwards to the end of a word
 - `E` - move forwards to the end of a WORD
 - `b` - move backwards to the start of a word
 - `B` - move backwards to the start of a WORD
+### Other
 - `%` - matching bracket
 - `{` - next paragraph
 - `}` - previous paragraph
-- `^f` - move forward a page
-- `^b` - move backward a page
 
 ## Editing
 - `i` - insert before the cursor
@@ -36,10 +43,10 @@
 - `o` - insert new line below the cursor and insert text
 - `O` - insert new line above the cursor and insert text
 - `x` - delete character under the cursor
-- `d{motion}` - delete the text for {motion}
+- `d<motion>` - delete the text for `<motion>`
 - `dd` - delete a line
 - `D` - delete until the end of the line
-- `c{motion}` - change the text for {motion}
+- `c<motion>` - change the text for `<motion>`
 - `cc` - change the entire line
 - `C` - change the text until the end of the line
 

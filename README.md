@@ -1,5 +1,11 @@
 # vim-cheatsheet
 
+## To-dos
+- Copy and paste
+- Text objects
+- Navigating through code
+- Buffer
+
 ## Command
 - `:help <term>` - open Vim's help
 - `:e <path>` - edit a file

@@ -25,6 +25,8 @@
 - `F<char>` - previous occurence of `<char>` on current line
 - `t<char>` - left of `f<char>`
 - `T<char>` - left of `F<char>`
+- `;` - repeat previous `[fFtT]`
+- `,` - repeat previous `[fFtT]` backward
 - `G` - the last line
 - `_G` - nth-line
 - `^f` - move forward a page
@@ -64,8 +66,13 @@
 ## Searching
 - `/pattern` - search forward for pattern
 - `?pattern` - search backward for pattern
+- `//` - search forward using last pattern
+- `??` - search backward using last pattern
+- `*` - search forward for current word
 - `n` - repeat the search in same direction
 - `N` - repeat the search in opposite direction
+- `gd` - go to local declaration
+- `gD` - go to global declaration
 - `:noh` - remove search highlighting
 
 ## Configuration
